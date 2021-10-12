@@ -1,34 +1,17 @@
-import logo from './logo.svg';
 import './App.scss';
+import Header from './components/header';
+import Wrapper from './components/wrapper';
+import Footer from './components/footer';
 
 function App() {
   return (
     <div className="App">
-      <header>
-          <div className="container">
-            <div className="logo">LOGO</div>
-            <div className="navigation-section">
-              <ul>
-                <li>Link 1</li>
-                <li>Link 2</li>
-                <li>Link 3</li>
-                <li>Link 3</li>
-              </ul>
-            </div>
-            </div>
-      </header>
 
-      <wrapper>
-          <div className="container">
-          Content Section
-          </div>
-      </wrapper>
+      <Header />
 
-      <footer>
-        <div className="conatiner">
-          Footer Content
-        </div>
-      </footer>
+      <Wrapper />
+
+      <Footer />
 
     </div>
   );
