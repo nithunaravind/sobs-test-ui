@@ -75,7 +75,7 @@ header {
   display: flex;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding: 20px 0;
+  padding: 30px;
 
   .logo {
     color: #000;
@@ -113,7 +113,7 @@ header {
 
 wrapper {
   background-color: #fff;
-  padding: 30px 0;
+  padding: 30px;
   text-align: center;
   color: #000;
   display: block;
@@ -122,6 +122,35 @@ wrapper {
 
 footer {
   background-color: #ccc;
-  padding: 30px 0;
+  padding: 30px;
   color: #000;
+}
+
+
+// ================================
+// Arabic Style
+// ================================
+
+body {
+  &.arabic {
+    text-align: right;
+    direction: rtl;
+    float: right;
+  }
+
+  header {
+    .navigation-section {
+      text-align: left;
+    }
+
+    .logo {
+      text-align: right;
+    }
+
+  }
+
+  wrapper {
+    text-align: right;
+  }
+
 }
